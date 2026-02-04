@@ -1,1 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OWLAM Studios LLC — About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .page{padding:40px 0 70px}
+    .title{
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight:600;
+      font-size:42px;
+      text-align:center;
+      margin:10px 0 12px;
+    }
+    .subtext{
+      max-width:820px;
+      margin:0 auto 28px;
+      text-align:center;
+      color: var(--muted);
+      line-height:1.7;
+    }
+    .panel{
+      margin-top:28px;
+      padding:26px;
+      border-radius:18px;
+      border:1px solid rgba(201,162,77,.18);
+      background: rgba(16,16,16,.35);
+    }
+    .panel h2{
+      margin:0 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight:600;
+    }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, rgba(201,162,77,.55), rgba(201,162,77,0));
+      margin:10px 0 18px;
+    }
+    .prose{
+      color: var(--muted);
+      line-height:1.8;
+      font-size:15.5px;
+    }
+    .prose strong{color: var(--text)}
+    .process{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:14px;
+      margin-top:18px;
+    }
+    .step{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid rgba(201,162,77,.12);
+      background: rgba(11,11,11,.35);
+    }
+    .step .k{
+      color: var(--gold);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:12px;
+      font-weight:700;
+      margin:0 0 10px;
+    }
+    .step .d{color: var(--muted); line-height:1.65; font-size:14px}
+    @media (max-width:900px){
+      .process{grid-template-columns: 1fr}
+      .title{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">OWLAM Studios</div>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="kicker">Owlam Studios LLC</div>
+    <h1 class="title">About</h1>
+    <p class="subtext">Independent film production and distribution dedicated to bold, emotionally resonant storytelling with global reach.</p>
+
+    <section class="panel">
+      <h2>Company Overview</h2>
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="prose">
+        <p><strong>Owlam Studios LLC</strong> is an independent film production and distribution company dedicated to crafting bold, emotionally resonant stories with global reach. Founded on a passion for original storytelling and cinematic excellence, Owlam Studios develops, produces, and distributes feature films, short films, and premium visual content across multiple genres.</p>
+
+        <p>At its core, Owlam Studios champions creator-driven projects that blend artistic vision with commercial viability. The company focuses on character-forward narratives, distinctive visual language, and stories that challenge, inspire, and entertain audiences beyond borders.</p>
+
+        <p>Owlam Studios oversees the full filmmaking pipeline—from concept development and script refinement through production, post-production, and strategic distribution. By maintaining creative control while embracing modern distribution models, the company ensures each project reaches the right audience through festivals, theatrical release, digital platforms, and international markets.</p>
+
+        <p>Driven by collaboration, innovation, and a commitment to quality, <strong>Owlam Studios LLC</strong> aims to be a home for filmmakers with unique voices and ambitious ideas—stories that linger long after the screen fades to black.</p>
+      </div>
+
+      <div class="process">
+        <div class="step">
+          <div class="k">Concept</div>
+          <div class="d">Concept development, script refinement, tone, and visual direction.</div>
+        </div>
+        <div class="step">
+          <div class="k">Production</div>
+          <div class="d">Controlled, efficient execution designed for cinematic impact.</div>
+        </div>
+        <div class="step">
+          <div class="k">Post &amp; Distribution</div>
+          <div class="d">Editorial, color, sound, and strategic distribution across platforms and markets.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
 
