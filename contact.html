@@ -1,1 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OWLAM Studios LLC — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .page{padding:40px 0 70px}
+    .title{
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight:600;
+      font-size:42px;
+      text-align:center;
+      margin:10px 0 12px;
+    }
+    .subtext{
+      max-width:820px;
+      margin:0 auto 28px;
+      text-align:center;
+      color: var(--muted);
+      line-height:1.7;
+    }
+    .panel{
+      margin-top:28px;
+      padding:26px;
+      border-radius:18px;
+      border:1px solid rgba(201,162,77,.18);
+      background: rgba(16,16,16,.35);
+    }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, rgba(201,162,77,.55), rgba(201,162,77,0));
+      margin:10px 0 18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      margin-top:14px;
+    }
+    label{
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color: var(--muted);
+    }
+    .field{display:grid; gap:6px; margin-bottom:12px}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(201,162,77,.16);
+      background: rgba(11,11,11,.50);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:140px; resize:vertical}
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(201,162,77,.40);
+      box-shadow: 0 0 0 4px rgba(201,162,77,.10);
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:999px;
+      font-size:12px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      border:1px solid transparent;
+      cursor:pointer;
+    }
+    .btn-gold{
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color:#161616;
+      font-weight:700;
+    }
+    .side{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid rgba(201,162,77,.12);
+      background: rgba(11,11,11,.35);
+      color: var(--muted);
+      line-height:1.65;
+    }
+    .side .k{
+      color: var(--gold);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:12px;
+      font-weight:700;
+      margin:0 0 10px;
+    }
+    @media (max-width:900px){
+      .grid{grid-template-columns: 1fr}
+      .title{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">OWLAM Studios</div>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="kicker">Contact</div>
+    <h1 class="title">Contact Us</h1>
+    <p class="subtext">Tell us about your project. We’d love to collaborate.</p>
+
+    <section class="panel">
+      <h2 style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-weight:600;">Inquiry</h2>
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="grid">
+        <form onsubmit="event.preventDefault(); alert('Thanks! This form can be connected to email next.');">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" required placeholder="Your name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="you@email.com" />
+          </div>
+
+          <div class="field">
+            <label for="type">Project Type</label>
+            <select id="type">
+              <option>Feature Film</option>
+              <option>Short Film</option>
+              <option>Commercial / Brand Film</option>
+              <option>Music Video</option>
+              <option>Documentary</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="timeline">Timeline</label>
+            <input id="timeline" placeholder="e.g., March 2026 / 6 weeks" />
+          </div>
+
+          <div class="field">
 
